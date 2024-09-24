@@ -437,14 +437,14 @@ onMounted(() => {
         display: none;
     }
     .text-inner{
-        line-height: 1.5;
+        line-height: 1.7;
         font-size: 14px;
         padding: 70px 50px 70px 200px;
         margin-left: 0px;
         margin-right: 0px;
     }
     .text-inner2{
-        line-height: 1.5;
+        line-height: 1.7;
         font-size: 14px;
         padding: 70px 150px 70px 50px;
         margin-left: 0px;
@@ -475,14 +475,14 @@ onMounted(() => {
         padding: 0px 15px;
     }
     .text-inner{
-        line-height: 1.5;
+        line-height: 1.7;
         font-size: 14px;
         padding: 40px 20px 0px 20px;
         margin-left: 0px;
         margin-right: 0px;
     }
     .text-inner2{
-        line-height: 1.5;
+        line-height: 1.7;
         font-size: 14px;
         padding: 0px 20px 40px 20px;
         margin-left: 0px;
