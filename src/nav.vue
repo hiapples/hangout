@@ -9,12 +9,17 @@ let lastScrollY = window.scrollY;
 const handleScroll = () => {
   const currentScrollY = window.scrollY;
 
+  // 滾動到頂部時，不進行隱藏操作，直接顯示導航
+  if (currentScrollY === 0) {
+    isHidden.value = false; // 顯示導航欄
+    return; // 結束函數，不執行後續隱藏邏輯
+  }
+
+  // 超過50px滾動時改變導航狀態
   isScrolled.value = currentScrollY > 50;
 
-  // 如果滑動到最上面，強制顯示導航欄
-  if (currentScrollY === 0) {
-    isHidden.value = false;
-  } else if (currentScrollY > lastScrollY) {
+  // 只有在向下滾動時才隱藏導航
+  if (currentScrollY > lastScrollY) {
     isHidden.value = true; // 向下滾動，隱藏導航
   } else {
     isHidden.value = false; // 向上滾動，顯示導航
@@ -22,6 +27,7 @@ const handleScroll = () => {
 
   lastScrollY = currentScrollY;
 };
+
 
 
 // 滾動到指定部分的函數，滾完畢後隱藏導航
