@@ -4,8 +4,8 @@
     "description": "A PWA example app",
     "start_url": "/",
     "display": "standalone",
-    "background_color": "rgba(41, 41, 41, 0.9)",
-    "theme_color": "rgba(41, 41, 41, 0.9)",
+    "background_color": "#292929",
+    "theme_color": "#292929",
     "icons": [
       {
         "src": "src/photo/logo.png",
