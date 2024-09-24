@@ -11,7 +11,10 @@ const handleScroll = () => {
 
   isScrolled.value = currentScrollY > 50;
 
-  if (currentScrollY > lastScrollY) {
+  // 如果滑動到最上面，強制顯示導航欄
+  if (currentScrollY === 0) {
+    isHidden.value = false;
+  } else if (currentScrollY > lastScrollY) {
     isHidden.value = true; // 向下滾動，隱藏導航
   } else {
     isHidden.value = false; // 向上滾動，顯示導航
@@ -19,6 +22,7 @@ const handleScroll = () => {
 
   lastScrollY = currentScrollY;
 };
+
 
 // 滾動到指定部分的函數，滾完畢後隱藏導航
 const scrollToSection = (index) => {
