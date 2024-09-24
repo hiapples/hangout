@@ -5,12 +5,15 @@ const isScrolled = ref(false);
 const isHidden = ref(false);
 let lastScrollY = window.scrollY;
 
+// 設定一個閾值，避免滾動時的微小誤差
+const SCROLL_THRESHOLD = 5;
+
 // 滾動事件處理
 const handleScroll = () => {
   const currentScrollY = window.scrollY;
 
-  // 滾動到頂部時，不進行隱藏操作，直接顯示導航
-  if (currentScrollY === 0) {
+  // 當滾動高度小於閾值時，視為已滾動到頂部
+  if (currentScrollY <= SCROLL_THRESHOLD) {
     isHidden.value = false; // 顯示導航欄
     return; // 結束函數，不執行後續隱藏邏輯
   }
@@ -18,7 +21,7 @@ const handleScroll = () => {
   // 超過50px滾動時改變導航狀態
   isScrolled.value = currentScrollY > 50;
 
-  // 只有在向下滾動時才隱藏導航
+  // 向下滾動時隱藏導航，向上滾動顯示導航
   if (currentScrollY > lastScrollY) {
     isHidden.value = true; // 向下滾動，隱藏導航
   } else {
@@ -27,6 +30,7 @@ const handleScroll = () => {
 
   lastScrollY = currentScrollY;
 };
+
 
 
 
