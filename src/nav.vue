@@ -24,14 +24,21 @@ const handleScroll = () => {
   // 向下滾動時隱藏導航，向上滾動顯示導航
   if (currentScrollY > lastScrollY) {
     isHidden.value = true; // 向下滾動，隱藏導航
+
+    // 檢查是否需要關閉折疊導航欄
+    const navbarToggler = document.querySelector('.navbar-collapse');
+    if (navbarToggler.classList.contains('show')) {
+      const bsCollapse = new bootstrap.Collapse(navbarToggler, {
+        toggle: true,
+      });
+      bsCollapse.hide(); // 隱藏折疊導航欄
+    }
   } else {
     isHidden.value = false; // 向上滾動，顯示導航
   }
 
   lastScrollY = currentScrollY;
 };
-
-
 
 
 // 滾動到指定部分的函數，滾完畢後隱藏導航
