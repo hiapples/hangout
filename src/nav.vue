@@ -40,7 +40,7 @@ const scrollToSection = (index) => {
   const targetSection = document.getElementById(targetSectionId);
   
   if (targetSection) {
-    const offsetPosition = targetSection.getBoundingClientRect().top + window.scrollY - 50;
+    const offsetPosition = targetSection.getBoundingClientRect().top + window.scrollY - 30;
 
     window.scrollTo({
       top: offsetPosition,
@@ -54,10 +54,20 @@ const scrollToSection = (index) => {
 
         // 滾動完畢後隱藏導航
         isHidden.value = true;
+
+        // 手動關閉折疊導航欄
+        const navbarToggler = document.querySelector('.navbar-collapse');
+        if (navbarToggler.classList.contains('show')) {
+          const bsCollapse = new bootstrap.Collapse(navbarToggler, {
+            toggle: true,
+          });
+          bsCollapse.hide(); // 隱藏折疊導航欄
+        }
       }
     }, 100); // 每 100 毫秒檢查一次滾動是否完成
   }
 };
+
 
 
 
@@ -94,7 +104,7 @@ onUnmounted(() => {
             <button class="nav-link" aria-current="page" @click="scrollToSection(0)">關於我們</button>
           </li>
           <li class="nav-item me-lg-3 ms-auto">
-            <button class="nav-link">最新消息</button>
+            <button class="nav-link" @click="scrollToSection(1)">最新消息</button>
           </li>
           <li class="nav-item me-lg-3 ms-auto">
             <button class="nav-link">菜單</button>
