@@ -7,6 +7,7 @@
     import Back from "./back.vue";
     import About from "./about.vue";
     import News from "./news.vue";
+    import Menu from "./menu.vue";
 
 </script>
 <template>
@@ -21,6 +22,7 @@
     <Banner></Banner>
     <About></About>
     <News></News>
+    <Menu></Menu>
     <Back></Back>
     <br/><br/><br/><br/> <br/><br/><br/><br/> <br/><br/><br/><br/>
 </template>
