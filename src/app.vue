@@ -6,7 +6,7 @@
     import Opening from "./opening.vue";
     import Back from "./back.vue";
     import About from "./about.vue";
-    
+    import News from "./news.vue";
 
 </script>
 <template>
@@ -20,6 +20,7 @@
     </div>
     <Banner></Banner>
     <About></About>
+    <News></News>
     <Back></Back>
     <br/><br/><br/><br/> <br/><br/><br/><br/> <br/><br/><br/><br/>
 </template>

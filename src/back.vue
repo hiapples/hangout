@@ -37,8 +37,8 @@ onUnmounted(() => {
     bottom: 30px;
     padding: 10px 7px; 
     border-radius: 50%; 
-    color: rgb(11, 133, 106);
-    border: 3px solid rgb(11, 133, 106);
+    color:  rgb(9, 79, 64);
+    border: 3px solid rgb(9, 79, 64);
     font-family: 'font';
     text-decoration: none;
     opacity: 0; /* 開始時隱藏 */
