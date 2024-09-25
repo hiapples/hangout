@@ -149,7 +149,7 @@ const scrollRight = () => {
 
 <style scoped>
 #carouselExampleIndicators {
-    margin-top: 100px;
+    margin-top: 200px;
     width: 100%;
     height: 650px;
     overflow: hidden; 
