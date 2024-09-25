@@ -193,9 +193,10 @@ const scrollRight = () => {
 .card {
     flex: 0 0 100%; /* 確保每個卡片佔滿容器寬度 */
     height: 670px; /* 卡片高度 */
-    background-color: #f8f9fa; /* 便於識別的背景顏色 */
+    background-color: transparent; /* 便於識別的背景顏色 */
     display: flex;
     border-radius: 0%;
+    border: none;
 }
 
 
