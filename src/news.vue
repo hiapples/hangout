@@ -20,7 +20,7 @@ const scrollLeft = () => {
         // 在滾動完成後重置標記
         setTimeout(() => {
             isScrolling.value = false;
-        },800); // 根據預期的滾動持續時間調整超時持續時間
+        },500); // 根據預期的滾動持續時間調整超時持續時間
     }
 };
 
@@ -39,7 +39,7 @@ const scrollRight = () => {
         // 在滾動完成後重置標記
         setTimeout(() => {
             isScrolling.value = false;
-        }, 800); // 根據預期的滾動持續時間調整超時持續時間
+        }, 500); // 根據預期的滾動持續時間調整超時持續時間
     }
 };
 
