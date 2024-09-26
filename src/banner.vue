@@ -109,5 +109,12 @@ const scrollToSection = (index) => {
     .subtitle2{
         font-size: 16px;
     }
+    /* Disable hover effects for touch devices */
+    .subtitle {
+        outline-offset: 7px;
+        border-radius: 0px;
+        outline-color: rgb(11, 133, 106);
+        background: rgb(11, 133, 106);
+    }
 }
 </style>
