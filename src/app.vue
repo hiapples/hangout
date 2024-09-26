@@ -22,7 +22,6 @@
     <Banner></Banner>
     <About></About>
     <News></News>
-    <Menu></Menu>
     <Back></Back>
     <br/><br/><br/><br/> <br/><br/><br/><br/> <br/><br/><br/><br/>
 </template>

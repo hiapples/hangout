@@ -78,43 +78,32 @@ const scrollToSection = (index) => {
     transition: outline-offset 0.5s, border-radius 0.25s,outline-color 0.5s; /* 過渡效果 */
     overflow: hidden; /* 確保偽元素不超出範圍 */
 }
-@media (hover: hover) {
-    .subtitle:hover {
-        outline-offset: 0px;
-        border-radius: 20px;
-        outline-color: rgba(11, 133, 106, 0);
-        background: linear-gradient(to right, rgb(13, 172, 137), rgb(9, 100, 80));
-    }
-
-    .subtitle::before {
-        content: ''; /* 必須設置內容才能顯示偽元素 */
-        position: absolute;
-        top: 0;
-        left: -100%; /* 初始位置在左側之外 */
-        width: 100%;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.5); /* 白色光影，透明度為 0.5 */
-        transition: left 0.3s ease; /* 動畫持續時間和效果 */
-    }
-
-    .subtitle:hover::before {
-        left: 100%; /* 滑鼠懸停時，白光從左到右移動 */
-    }
+.subtitle:hover{
+    outline-offset: 0px;
+    border-radius: 20px;
+    outline-color: rgba(11, 133, 106, 0);
+    background: linear-gradient(to right, rgb(13, 172, 137), rgb(9, 100, 80));
+}
+.subtitle::before {
+    content: ''; /* 必須設置內容才能顯示偽元素 */
+    position: absolute;
+    top: 0;
+    left: -100%; /* 初始位置在左側之外 */
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* 白色光影，透明度為 0.5 */
+    transition: left 0.3s ease; /* 動畫持續時間和效果 */
 }
 
+.subtitle:hover::before {
+    left: 100%; /* 滑鼠懸停時，白光從左到右移動 */
+}
 @media (max-width: 576px) {
     .subtitle{
         font-size: 20px;
     }
     .subtitle2{
         font-size: 16px;
-    }
-    /* Disable hover effects for touch devices */
-    .subtitle {
-        outline-offset: 7px;
-        border-radius: 0px;
-        outline-color: rgb(11, 133, 106);
-        background: rgb(11, 133, 106);
     }
 }
 </style>
