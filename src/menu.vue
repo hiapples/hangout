@@ -194,7 +194,15 @@ import { ref } from "vue";
     border-bottom: 3px solid #000;
 }
 @media (max-width: 992px) {
-
+    .title{
+        font-size: 22px;
+    }
+    .subtitle{
+        font-size: 14px;
+    }
+    .container{
+        margin-left: 0px;
+    }
 }
 @media (max-width: 576px) {
 
