@@ -38,6 +38,7 @@ const scrollToSection = (index) => {
     height: 100%; /* 确保图片填充容器高度 */
     object-fit: cover; /* 保持图片比例并填充容器 */
     object-position: center; /* 图片居中显示 */
+    z-index: 999;
 }
 .down{
     position: absolute;
@@ -93,6 +94,7 @@ const scrollToSection = (index) => {
     height: 100%;
     background: rgba(255, 255, 255, 0.5); /* 白色光影，透明度為 0.5 */
     transition: left 0.3s ease; /* 動畫持續時間和效果 */
+    z-index: 998;
 }
 
 .subtitle:hover::before {
