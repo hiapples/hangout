@@ -279,11 +279,11 @@ onUnmounted(() => {
   }
   .title {
     font-size: 16px;
-    margin-left: 0px;
+    margin-left: 5px;
   }
   .subtitle {
     font-size: 14px;
-    margin-left: 0px;
+    margin-left: 5px;
   }
   .red {
     font-size: 14px;
