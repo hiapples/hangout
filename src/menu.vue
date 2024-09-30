@@ -208,9 +208,10 @@ onUnmounted(() => {
   white-space: nowrap;
 }
 .menu-container {
-  background: url('/src/photo/—Pngtree—rough kraft paper background_1232396.jpg') no-repeat center center;
+  background: url('/src/photo/—Pngtree—rough kraft paper background_1232396.jpg') no-repeat left center;
   background-size: cover;
   height: 950px;
+
 }
 
 .logo {
