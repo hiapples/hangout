@@ -202,6 +202,8 @@ onUnmounted(() => {
   font-family: 'font';
   color: rgb(113, 14, 14);
   white-space: nowrap;
+
+
 }
 .en {
   font-size: 18px;
