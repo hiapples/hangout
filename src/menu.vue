@@ -211,11 +211,13 @@ onUnmounted(() => {
   white-space: nowrap;
 }
 .menu-container {
-  background: url('/src/photo/—Pngtree—rough kraft paper background_1232396.jpg') no-repeat left center;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0.2) 85%, rgba(255, 255, 255, 0.151) 100%), 
+              url('/src/photo/—Pngtree—rough kraft paper background_1232396.jpg') no-repeat left center;
   background-size: cover;
   height: 950px;
-
 }
+
+
 
 .logo {
   width: 300px;

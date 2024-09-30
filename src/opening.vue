@@ -10,7 +10,7 @@
             setTimeout(() => {
                 showAnimation.value = false;
             }, 300);
-        }, 2500);
+        }, 500);
     });
 </script>
 
