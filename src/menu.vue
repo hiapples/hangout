@@ -195,6 +195,7 @@ onUnmounted(() => {
   font-family: 'font';
   margin-left: 80px;
   white-space: nowrap;
+  font-weight: bold;
 }
 .red {
   font-size: 22px;
