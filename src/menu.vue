@@ -29,7 +29,7 @@ onUnmounted(() => {
 <template>
   <div class="menu-container mt-3">
     <div class="logo-container">
-      <div class="menu mt-3 mb-2">MENU</div>
+      <div class="menu mt-3 mb-2" id="title-section3">MENU</div>
     </div>
     <div class="container-fluid">
       <div class="row g-2">

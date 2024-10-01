@@ -47,7 +47,7 @@ const scrollToSection = (index) => {
   const targetSection = document.getElementById(targetSectionId);
   
   if (targetSection) {
-    const offsetPosition = targetSection.getBoundingClientRect().top + window.scrollY - 50;
+    const offsetPosition = targetSection.getBoundingClientRect().top + window.scrollY - 15;
 
     window.scrollTo({
       top: offsetPosition,
@@ -114,7 +114,7 @@ onUnmounted(() => {
             <button class="nav-link" @click="scrollToSection(1)">最新消息</button>
           </li>
           <li class="nav-item me-lg-3 ms-auto">
-            <button class="nav-link">菜單</button>
+            <button class="nav-link" @click="scrollToSection(2)">菜單</button>
           </li>
           <li class="nav-item me-lg-3 ms-auto">
             <button class="nav-link">登入</button>
