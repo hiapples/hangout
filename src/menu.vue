@@ -32,7 +32,7 @@ onUnmounted(() => {
       <div class="menu mt-3 mb-2">MENU</div>
     </div>
     <div class="container-fluid">
-      <div class="row g-1">
+      <div class="row g-2">
         <!-- First Column -->
         <div class="col-6 col-md-4">
           <div class="title">BURGERS (BEEF/PORK)</div>
@@ -302,7 +302,7 @@ onUnmounted(() => {
   }
   .subtitle {
     font-size: 14px;
-    margin-left: -15px;
+    margin-left: -10px;
   }
   .red {
     font-size: 14px;
