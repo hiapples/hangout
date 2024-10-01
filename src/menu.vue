@@ -32,7 +32,7 @@ onUnmounted(() => {
       <div class="menu mt-3 mb-2">MENU</div>
     </div>
     <div class="container-fluid">
-      <div class="row g-0">
+      <div class="row g-1">
         <!-- First Column -->
         <div class="col-6 col-md-4">
           <div class="title">BURGERS (BEEF/PORK)</div>
