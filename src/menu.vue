@@ -76,7 +76,7 @@ onUnmounted(() => {
               </li>
               <li class="mt-2">
                 <div>德州主烤官<span class="red ms-3">270$</span></div>
-                <div class="en">16hrSmokedBrisket/BeefPatty/Pickles/4hrSmokedWhiskyBBQQSauce</div>
+                <div class="en">16hrSmokedBrisket/BeefPatty/Pickles/4hrSmokedWhiskyBBQSauce</div>
               </li>
             </ol>
           </div>
