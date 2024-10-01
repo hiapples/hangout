@@ -88,20 +88,20 @@ onUnmounted(() => {
           <div class="subtitle">
             <ol>
               <li class="mt-2">
-                <div>美國經典熱狗<span class="red ms-3">120$</span></div>
-                <div class="en">Classic Dog/Mustard</div>
+                <div>德式脆腸豬肉堡<span class="red ms-3">100$</span></div>
+                <div class="en">ClassicBacon</div>
               </li>
               <li class="mt-2">
-                <div>起司熱狗<span class="red ms-3">130$</span></div>
-                <div class="en">Cheese Dog/Onions</div>
+                <div>北美燉肉香辣脆腸堡<span class="red ms-3">110$</span></div>
+                <div class="en">HotMeatSauce</div>
               </li>
               <li class="mt-2">
-                <div>辣味熱狗<span class="red ms-3">140$</span></div>
-                <div class="en">Spicy Dog/Chili</div>
+                <div>酸豆手撕豬肉脆腸堡<span class="red ms-3">120$</span></div>
+                <div class="en">PulledPork</div>
               </li>
               <li class="mt-2">
-                <div>辣味熱狗<span class="red ms-3">140$</span></div>
-                <div class="en">Spicy Dog/Chili</div>
+                <div>狼煙牛胸肉脆腸堡<span class="red ms-3">170$</span></div>
+                <div class="en">16hrSmokedBrisket</div>
               </li>
             </ol>
           </div>
@@ -289,19 +289,19 @@ onUnmounted(() => {
   }
 }
 @media (max-width: 576px) {
-    .menu-container {
-        height: 1200px;
-    }
+  .menu-container {
+    height: 1200px;
+  }
   .three{
     margin-top: 30px;
   }
   .title {
     font-size: 16px;
-    margin-left: 5px;
+    margin-left: 0px;
   }
   .subtitle {
     font-size: 14px;
-    margin-left: 5px;
+    margin-left: -15px;
   }
   .red {
     font-size: 14px;
@@ -309,6 +309,5 @@ onUnmounted(() => {
   .en {
     font-size: 12px;
   }
-
 }
 </style>
