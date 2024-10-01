@@ -109,20 +109,20 @@ onUnmounted(() => {
           <div class="subtitle">
             <ol>
               <li class="mt-2">
-                <div>薯條<span class="red ms-3">60$</span></div>
-                <div class="en">French Fries</div>
+                <div>薯條<span class="red ms-3">20$</span></div>
+                <div class="en">Fries</div>
               </li>
               <li class="mt-2">
-                <div>起司薯條<span class="red ms-3">80$</span></div>
-                <div class="en">Cheese Fries</div>
+                <div>玉米片佐莎莎醬<span class="red ms-3">20$</span></div>
+                <div class="en">Cornchips With Salsa Sauce</div>
               </li>
               <li class="mt-2">
-                <div>洋蔥圈<span class="red ms-3">70$</span></div>
-                <div class="en">Onion Rings</div>
+                <div>格子薯片/自製酸奶油<span class="red ms-3">50$</span></div>
+                <div class="en">Checkered Potato Chips/SourCream</div>
               </li>
               <li class="mt-2">
-                <div>洋蔥圈<span class="red ms-3">70$</span></div>
-                <div class="en">Onion Rings</div>
+                <div>炸雞塊<span class="red ms-3">60$</span></div>
+                <div class="en">Chicken Nuggets/CarolinSweetBBQSauce</div>
               </li>
             </ol>
           </div>
@@ -132,16 +132,16 @@ onUnmounted(() => {
               <div class="subtitle">
                 <ol>
                   <li class="mt-2">
-                    <div>可樂<span class="red ms-3">50$</span></div>
-                    <div class="en">Coke</div>
+                    <div>百事/零卡可樂/激浪/雪碧<span class="red ms-3">40$</span></div>
+                    <div class="en">Pepsi/CocaColaZero/MountainDew/Sprite</div>
                   </li>
                   <li class="mt-2">
-                    <div>雪碧<span class="red ms-3">50$</span></div>
-                    <div class="en">Sprite</div>
+                    <div>柳橙汁/蘋果汁/檸檬紅茶<span class="red ms-3">40$</span></div>
+                    <div class="en">Orange/Apple/LemonBlackTea</div>
                   </li>
                   <li class="mt-2">
-                    <div>冰紅茶<span class="red ms-3">50$</span></div>
-                    <div class="en">Iced Tea</div>
+                    <div>海尼根/台虎<span class="red ms-3">60$</span></div>
+                    <div class="en">Heineken/TaihuBrewing</div>
                   </li>
                 </ol>
               </div>
@@ -152,19 +152,19 @@ onUnmounted(() => {
         <div class="col-10 col-md-4 three">
           <div v-if="!isSmallScreen">
             <div class="title mt-5 mt-md-0">DRINKS</div>
-              <div class="subtitle">
+            <div class="subtitle">
                 <ol>
                   <li class="mt-2">
-                    <div>可樂<span class="red ms-3">50$</span></div>
-                    <div class="en">Coke</div>
+                    <div>百事/零卡可樂/激浪/雪碧<span class="red ms-3">40$</span></div>
+                    <div class="en">Pepsi/CocaColaZero/MountainDew/Sprite</div>
                   </li>
                   <li class="mt-2">
-                    <div>雪碧<span class="red ms-3">50$</span></div>
-                    <div class="en">Sprite</div>
+                    <div>柳橙汁/蘋果汁/檸檬紅茶<span class="red ms-3">40$</span></div>
+                    <div class="en">Orange/Apple/LemonBlackTea</div>
                   </li>
                   <li class="mt-2">
-                    <div>冰紅茶<span class="red ms-3">50$</span></div>
-                    <div class="en">Iced Tea</div>
+                    <div>海尼根/台虎<span class="red ms-3">60$</span></div>
+                    <div class="en">Heineken/TaihuBrewing</div>
                   </li>
                 </ol>
               </div>
@@ -294,7 +294,7 @@ onUnmounted(() => {
 }
 @media (max-width: 576px) {
   .menu-container {
-    height: 2400px;
+    height: 2450px;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.119) 70%, rgba(255, 255, 255, 0.263) 80%, rgba(255, 255, 255, 0.137) 85%, rgba(255, 255, 255, 0.174) 100%), 
                 url('/src/photo/666.png') no-repeat center center;
     background-size: cover; /* 讓背景圖片覆蓋整個容器 */
