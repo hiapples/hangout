@@ -35,7 +35,7 @@ onUnmounted(() => {
       <div class="row g-2">
         <!-- First Column -->
         <div class="col-10 col-md-4">
-          <div class="title">BURGERS (BEEF/PORK)</div>
+          <div class="title">BURGERS(BEEF/PORK)</div>
           <div class="subtitle">
             <ol>
               <li class="mt-2">
@@ -84,7 +84,7 @@ onUnmounted(() => {
 
         <!-- Second Column -->
         <div class="col-10 col-md-4">
-          <div class="title">HOT DOGS (PORK)</div>
+          <div class="title mt-5 mt-md-0">HOT DOGS(PORK)</div>
           <div class="subtitle">
             <ol>
               <li class="mt-2">
@@ -105,7 +105,7 @@ onUnmounted(() => {
               </li>
             </ol>
           </div>
-          <div class="title mt-md-5">SIDES</div>
+          <div class="title mt-5">SIDES</div>
           <div class="subtitle">
             <ol>
               <li class="mt-2">
@@ -128,7 +128,7 @@ onUnmounted(() => {
           </div>
 
           <div v-if="isSmallScreen">
-            <div class="title">DRINKS</div>
+            <div class="title mt-5 mt-md-0">DRINKS</div>
               <div class="subtitle">
                 <ol>
                   <li class="mt-2">
@@ -151,7 +151,7 @@ onUnmounted(() => {
         <!-- Third Column -->
         <div class="col-10 col-md-4 three">
           <div v-if="!isSmallScreen">
-            <div class="title">DRINKS</div>
+            <div class="title mt-5 mt-md-0">DRINKS</div>
               <div class="subtitle">
                 <ol>
                   <li class="mt-2">
@@ -170,7 +170,7 @@ onUnmounted(() => {
               </div>
           </div>
           <div>
-            <div class="title mt-md-5">用餐須知</div>
+            <div class="title mt-5">用餐須知</div>
             <div class="subtitle" style="white-space:wrap;">
               <ul>
                 <li class="mt-2">
@@ -294,7 +294,7 @@ onUnmounted(() => {
 }
 @media (max-width: 576px) {
   .menu-container {
-    height: 2300px;
+    height: 2400px;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.119) 70%, rgba(255, 255, 255, 0.263) 80%, rgba(255, 255, 255, 0.137) 85%, rgba(255, 255, 255, 0.174) 100%), 
                 url('/src/photo/666.png') no-repeat center center;
     background-size: cover; /* 讓背景圖片覆蓋整個容器 */
@@ -304,7 +304,6 @@ onUnmounted(() => {
   }
   .title {
     font-size: 24px;
-
   }
   .subtitle {
     font-size: 20px;
