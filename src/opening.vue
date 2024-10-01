@@ -21,7 +21,7 @@
         </div>
     </div>
 </template>
-
+    
 <style scoped>
     body {
         margin: 0;

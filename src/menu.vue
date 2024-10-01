@@ -127,47 +127,49 @@ onUnmounted(() => {
             </ol>
           </div>
 
-          <!-- Display dining instructions if on small screen -->
           <div v-if="isSmallScreen">
-            <div class="title mt-5">用餐須知</div>
-            <div class="subtitle" style="white-space:wrap;">
-              <ul>
-                <li class="mt-2">
-                  <div>餐點皆現做，請給予多一點耐心。</div>
-                </li>
-                <li class="mt-2">
-                  <div>請於櫃檯點餐及結帳。</div>
-                </li>
-                <li class="mt-2">
-                  <div>禁帶外食，理性溝通。</div>
-                </li>
-              </ul>
-            </div>
+            <div class="title">DRINKS</div>
+              <div class="subtitle">
+                <ol>
+                  <li class="mt-2">
+                    <div>可樂<span class="red ">50$</span></div>
+                    <div class="en">Coke</div>
+                  </li>
+                  <li class="mt-2">
+                    <div>雪碧<span class="red ">50$</span></div>
+                    <div class="en">Sprite</div>
+                  </li>
+                  <li class="mt-2">
+                    <div>冰紅茶<span class="red">50$</span></div>
+                    <div class="en">Iced Tea</div>
+                  </li>
+                </ol>
+              </div>
           </div>
         </div>
 
         <!-- Third Column -->
-        <div class="col-6 col-md-4 three">
-          <div class="title">DRINKS</div>
-          <div class="subtitle">
-            <ol>
-              <li class="mt-2">
-                <div>可樂<span class="red ">50$</span></div>
-                <div class="en">Coke</div>
-              </li>
-              <li class="mt-2">
-                <div>雪碧<span class="red ">50$</span></div>
-                <div class="en">Sprite</div>
-              </li>
-              <li class="mt-2">
-                <div>冰紅茶<span class="red">50$</span></div>
-                <div class="en">Iced Tea</div>
-              </li>
-            </ol>
-          </div>
-
-          <!-- Display dining instructions if on larger screens -->
+        <div class="col-12 col-md-4 three">
           <div v-if="!isSmallScreen">
+            <div class="title">DRINKS</div>
+              <div class="subtitle">
+                <ol>
+                  <li class="mt-2">
+                    <div>可樂<span class="red ">50$</span></div>
+                    <div class="en">Coke</div>
+                  </li>
+                  <li class="mt-2">
+                    <div>雪碧<span class="red ">50$</span></div>
+                    <div class="en">Sprite</div>
+                  </li>
+                  <li class="mt-2">
+                    <div>冰紅茶<span class="red">50$</span></div>
+                    <div class="en">Iced Tea</div>
+                  </li>
+                </ol>
+              </div>
+          </div>
+          <div>
             <div class="title mt-5">用餐須知</div>
             <div class="subtitle" style="white-space:wrap;">
               <ul>
@@ -183,12 +185,13 @@ onUnmounted(() => {
               </ul>
             </div>
           </div>
+
         </div>
       </div>
     </div>
   </div>
 </template>
-
+  
 <style scoped>
 .menu-container {
   overflow-y: hidden;
