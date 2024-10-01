@@ -218,7 +218,8 @@ onUnmounted(() => {
   font-size: 18px;
   font-family: 'font';
   white-space: normal; 
-  font-weight:  normal;
+  overflow-wrap: break-word;
+  font-weight: normal;
 }
 .menu-container {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.096) 70%, rgba(255, 255, 255, 0.228) 85%, rgba(255, 255, 255, 0.196) 100%), 
