@@ -225,10 +225,10 @@ onUnmounted(() => {
   font-weight: normal;
 }
 .menu-container {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.096) 70%, rgba(255, 255, 255, 0.37) 80%,rgba(255, 255, 255, 0.333) 85%, rgba(255, 255, 255, 0.342) 100%), 
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.119) 70%, rgba(255, 255, 255, 0.37) 80%,rgba(255, 255, 255, 0.333) 85%, rgba(255, 255, 255, 0.342) 100%), 
               url('/src/photo/—Pngtree—rough kraft paper background_1232396.jpg') no-repeat left center;
   background-size: cover;
-  height: 950px;
+  height: 1000px;
 }
 
 
@@ -295,6 +295,9 @@ onUnmounted(() => {
 @media (max-width: 576px) {
   .menu-container {
     height: 2300px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.119) 70%, rgba(255, 255, 255, 0.263) 80%, rgba(255, 255, 255, 0.189) 85%, rgba(255, 255, 255, 0.342) 100%), 
+                url('/src/photo/666.png') no-repeat center center;
+    background-size: cover; /* 讓背景圖片覆蓋整個容器 */
   }
   .three{
     margin-top: 0px;
@@ -313,5 +316,6 @@ onUnmounted(() => {
   .en {
     font-size: 16px;
   }
+
 }
 </style>
