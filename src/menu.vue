@@ -39,43 +39,43 @@ onUnmounted(() => {
           <div class="subtitle">
             <ol>
               <li class="mt-2">
-                <div>美國夢幻起司<span class="red ms-1">150$</span></div>
+                <div>美國夢幻起司<span class="red">150$</span></div>
                 <div class="en">FriedCheese/Pickles</div>
               </li>
               <li class="mt-2">
-                <div>藍調爵士起司<span class="red ms-1">170$</span></div>
+                <div>藍調爵士起司<span class="red">170$</span></div>
                 <div class="en">FriedBlueCheese/Pickles</div>
               </li>
               <li class="mt-2">
-                <div>夏威夷燒烤醬<span class="red ms-1">170$</span></div>
+                <div>夏威夷燒烤醬<span class="red ">170$</span></div>
                 <div class="en">Pineapple/HandMade BBQSauce</div>
               </li>
               <li class="mt-2">
-                <div>皇后區焦糖<span class="red ms-1">180$</span></div>
+                <div>皇后區焦糖<span class="red ">180$</span></div>
                 <div class="en">HandMade Salted Caramel Sauce/DriedStrawBerry/DriedOrangeSlices</div>
               </li>
               <li class="mt-2">
-                <div>香草松露野菇<span class="red ms-1">190$</span></div>
+                <div>香草松露野菇<span class="red ">190$</span></div>
                 <div class="en">Mushroom/TruffleSauce</div>
               </li>
               <li class="mt-2">
-                <div>南方炸雞三明治<span class="red ms-1">200$</span></div>
+                <div>南方炸雞三明治<span class="red ">200$</span></div>
                 <div class="en">SouthernFriedChicken/Pickles/HomemadeToast/Onion/Fries</div>
               </li>
               <li class="mt-2">
-                <div>辣刀堡<span class="red ms-1">200$</span></div>
+                <div>辣刀堡<span class="red ">200$</span></div>
                 <div class="en">HotMeatSauce/SourCream/CheeseChiliRoll</div>
               </li>
               <li class="mt-2">
-                <div>天使醬通心粉<span class="red ms-1">200$</span></div>
+                <div>天使醬通心粉<span class="red ">200$</span></div>
                 <div class="en">Bacon/Mac&Cheese/CheeseSauce</div>
               </li>
               <li class="mt-2">
-                <div>墨西哥酪梨<span class="red ms-1">250$</span></div>
+                <div>墨西哥酪梨<span class="red ">250$</span></div>
                 <div class="en">AvocadoSlices/Salsa/Pesto/jalapeno/SourCream</div>
               </li>
               <li class="mt-2">
-                <div>德州主烤官<span class="red ms-1">270$</span></div>
+                <div>德州主烤官<span class="red ">270$</span></div>
                 <div class="en">16hrSmokedBrisket/BeefPatty/Pickles/4hrSmokedWhiskyBBQSauce</div>
               </li>
             </ol>
@@ -88,19 +88,19 @@ onUnmounted(() => {
           <div class="subtitle">
             <ol>
               <li class="mt-2">
-                <div>德式脆腸豬肉堡<span class="red ms-1">100$</span></div>
+                <div>德式脆腸豬肉堡<span class="red">100$</span></div>
                 <div class="en">ClassicBacon</div>
               </li>
               <li class="mt-2">
-                <div>北美燉肉香辣脆腸堡<span class="red ms-1">110$</span></div>
+                <div>北美燉肉香辣脆腸堡<span class="red">110$</span></div>
                 <div class="en">HotMeatSauce</div>
               </li>
               <li class="mt-2">
-                <div>酸豆手撕豬肉脆腸堡<span class="red ms-1">120$</span></div>
+                <div>酸豆手撕豬肉脆腸堡<span class="red">120$</span></div>
                 <div class="en">PulledPork</div>
               </li>
               <li class="mt-2">
-                <div>狼煙牛胸肉脆腸堡<span class="red ms-1">170$</span></div>
+                <div>狼煙牛胸肉脆腸堡<span class="red">170$</span></div>
                 <div class="en">16hrSmokedBrisket</div>
               </li>
             </ol>
@@ -109,19 +109,19 @@ onUnmounted(() => {
           <div class="subtitle">
             <ol>
               <li class="mt-2">
-                <div>薯條<span class="red ms-1">60$</span></div>
+                <div>薯條<span class="red">60$</span></div>
                 <div class="en">French Fries</div>
               </li>
               <li class="mt-2">
-                <div>起司薯條<span class="red ms-1">80$</span></div>
+                <div>起司薯條<span class="red ">80$</span></div>
                 <div class="en">Cheese Fries</div>
               </li>
               <li class="mt-2">
-                <div>洋蔥圈<span class="red ms-1">70$</span></div>
+                <div>洋蔥圈<span class="red ">70$</span></div>
                 <div class="en">Onion Rings</div>
               </li>
               <li class="mt-2">
-                <div>洋蔥圈<span class="red ms-1">70$</span></div>
+                <div>洋蔥圈<span class="red ">70$</span></div>
                 <div class="en">Onion Rings</div>
               </li>
             </ol>
@@ -152,15 +152,15 @@ onUnmounted(() => {
           <div class="subtitle">
             <ol>
               <li class="mt-2">
-                <div>可樂<span class="red ms-1">50$</span></div>
+                <div>可樂<span class="red ">50$</span></div>
                 <div class="en">Coke</div>
               </li>
               <li class="mt-2">
-                <div>雪碧<span class="red ms-1">50$</span></div>
+                <div>雪碧<span class="red ">50$</span></div>
                 <div class="en">Sprite</div>
               </li>
               <li class="mt-2">
-                <div>冰紅茶<span class="red ms-1">50$</span></div>
+                <div>冰紅茶<span class="red">50$</span></div>
                 <div class="en">Iced Tea</div>
               </li>
             </ol>
