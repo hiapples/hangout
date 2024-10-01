@@ -294,24 +294,24 @@ onUnmounted(() => {
 }
 @media (max-width: 576px) {
   .menu-container {
-    height: 1700px;
+    height: 2150px;
   }
   .three{
     margin-top: 0px;
   }
   .title {
-    font-size: 18px;
+    font-size: 22px;
 
   }
   .subtitle {
-    font-size: 16px;
+    font-size: 18px;
 
   }
   .red {
-    font-size: 16px;
+    font-size: 18px;
   }
   .en {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 </style>
