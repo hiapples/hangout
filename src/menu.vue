@@ -7,9 +7,18 @@ const checkScreenSize = () => {
   isSmallScreen.value = window.innerWidth < 768;
 };
 
+// Function to replace slashes with <wbr> in English descriptions
+const replaceSlashes = () => {
+  const elements = document.querySelectorAll('.en');
+  elements.forEach(function(element) {
+    element.innerHTML = element.innerHTML.replace(/\//g, '/<wbr>');
+  });
+};
+
 onMounted(() => {
   checkScreenSize();
   window.addEventListener("resize", checkScreenSize);
+  replaceSlashes(); // Call the function after the component mounts
 });
 
 onUnmounted(() => {
@@ -24,56 +33,56 @@ onUnmounted(() => {
     </div>
     <div class="container-fluid">
       <div class="row">
-        <!-- 第一欄 -->
+        <!-- First Column -->
         <div class="col-6 col-md-4">
           <div class="title">BURGERS (BEEF/PORK)</div>
           <div class="subtitle">
             <ol>
               <li class="mt-2">
                 <div>美國夢幻起司<span class="red ms-3">150$</span></div>
-                <div class="en">Fried Cheese/Pickles</div>
+                <div class="en">FriedCheese/Pickles</div>
               </li>
               <li class="mt-2">
-                <div>墨西哥辣味牛肉<span class="red ms-3">160$</span></div>
-                <div class="en">Spicy Beef/Jalapenos</div>
+                <div>藍調爵士起司<span class="red ms-3">170$</span></div>
+                <div class="en">FriedBlueCheese/Pickles</div>
               </li>
               <li class="mt-2">
-                <div>香脆雞肉堡<span class="red ms-3">170$</span></div>
-                <div class="en">Crispy Chicken/Lettuce</div>
+                <div>夏威夷燒烤醬<span class="red ms-3">170$</span></div>
+                <div class="en">Pineapple/HandMade BBQSauce</div>
               </li>
               <li class="mt-2">
-                <div>美式經典牛肉<span class="red ms-3">180$</span></div>
-                <div class="en">Classic Beef/Cheddar</div>
+                <div>皇后區焦糖<span class="red ms-3">180$</span></div>
+                <div class="en">HandMade Salted Caramel Sauce/DriedStrawBerry/DriedOrangeSlices</div>
               </li>
               <li class="mt-2">
-                <div>美式經典牛肉<span class="red ms-3">180$</span></div>
-                <div class="en">Classic Beef/Cheddar</div>
+                <div>香草松露野菇<span class="red ms-3">190$</span></div>
+                <div class="en">Mushroom/TruffleSauce</div>
               </li>
               <li class="mt-2">
-                <div>美式經典牛肉<span class="red ms-3">180$</span></div>
-                <div class="en">Classic Beef/Cheddar</div>
+                <div>南方炸雞三明治<span class="red ms-3">200$</span></div>
+                <div class="en">SouthernFriedChicken/Pickles/HomemadeToast/Onion/Fries</div>
               </li>
               <li class="mt-2">
-                <div>美式經典牛肉<span class="red ms-3">180$</span></div>
-                <div class="en">Classic Beef/Cheddar</div>
+                <div>辣刀堡<span class="red ms-3">200$</span></div>
+                <div class="en">HotMeatSauce/SourCream/CheeseChiliRoll</div>
               </li>
               <li class="mt-2">
-                <div>美式經典牛肉<span class="red ms-3">180$</span></div>
-                <div class="en">Classic Beef/Cheddar</div>
+                <div>天使醬通心粉<span class="red ms-3">200$</span></div>
+                <div class="en">Bacon/Mac&Cheese/CheeseSauce</div>
               </li>
               <li class="mt-2">
-                <div>美式經典牛肉<span class="red ms-3">180$</span></div>
-                <div class="en">Classic Beef/Cheddar</div>
+                <div>墨西哥酪梨<span class="red ms-3">250$</span></div>
+                <div class="en">AvocadoSlices/Salsa/Pesto/jalapeno/SourCream</div>
               </li>
               <li class="mt-2">
-                <div>美式經典牛肉<span class="red ms-3">180$</span></div>
-                <div class="en">Classic Beef/Cheddar</div>
+                <div>德州主烤官<span class="red ms-3">270$</span></div>
+                <div class="en">16hrSmokedBrisket/BeefPatty/Pickles/4hrSmokedWhiskyBBQQSauce</div>
               </li>
             </ol>
           </div>
         </div>
 
-        <!-- 第二欄 -->
+        <!-- Second Column -->
         <div class="col-6 col-md-4">
           <div class="title">HOT DOGS (PORK)</div>
           <div class="subtitle">
@@ -118,7 +127,7 @@ onUnmounted(() => {
             </ol>
           </div>
 
-          <!-- 如果是小螢幕，將用餐須知顯示在這裡 -->
+          <!-- Display dining instructions if on small screen -->
           <div v-if="isSmallScreen">
             <div class="title mt-5">用餐須知</div>
             <div class="subtitle" style="white-space:wrap;">
@@ -137,7 +146,7 @@ onUnmounted(() => {
           </div>
         </div>
 
-        <!-- 第三欄 -->
+        <!-- Third Column -->
         <div class="col-6 col-md-4 three">
           <div class="title">DRINKS</div>
           <div class="subtitle">
@@ -157,7 +166,7 @@ onUnmounted(() => {
             </ol>
           </div>
 
-          <!-- 如果不是小螢幕，將用餐須知顯示在這裡 -->
+          <!-- Display dining instructions if on larger screens -->
           <div v-if="!isSmallScreen">
             <div class="title mt-5">用餐須知</div>
             <div class="subtitle" style="white-space:wrap;">
@@ -208,7 +217,9 @@ onUnmounted(() => {
 .en {
   font-size: 18px;
   font-family: 'font';
-  white-space: nowrap;
+  white-space: normal; 
+  overflow-wrap: break-word;
+  font-weight:  normal;
 }
 .menu-container {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.096) 70%, rgba(255, 255, 255, 0.228) 85%, rgba(255, 255, 255, 0.196) 100%), 
@@ -280,10 +291,10 @@ onUnmounted(() => {
 }
 @media (max-width: 576px) {
     .menu-container {
-        height: 1050px;
+        height: 1200px;
     }
   .three{
-    margin-top: -120px;
+    margin-top: 30px;
   }
   .title {
     font-size: 16px;
@@ -297,7 +308,7 @@ onUnmounted(() => {
     font-size: 14px;
   }
   .en {
-    font-size: 14px;
+    font-size: 12px;
   }
 
 }
