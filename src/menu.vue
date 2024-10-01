@@ -300,18 +300,18 @@ onUnmounted(() => {
     margin-top: 0px;
   }
   .title {
-    font-size: 16px;
+    font-size: 18px;
 
   }
   .subtitle {
-    font-size: 14px;
+    font-size: 16px;
 
   }
   .red {
-    font-size: 14px;
+    font-size: 16px;
   }
   .en {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 </style>
