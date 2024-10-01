@@ -218,7 +218,6 @@ onUnmounted(() => {
   font-size: 18px;
   font-family: 'font';
   white-space: normal; 
-  overflow-wrap: break-word;
   font-weight:  normal;
 }
 .menu-container {
