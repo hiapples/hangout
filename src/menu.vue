@@ -225,7 +225,7 @@ onUnmounted(() => {
   font-weight: normal;
 }
 .menu-container {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.096) 70%, rgba(255, 255, 255, 0.279) 80%,rgba(255, 255, 255, 0.228) 85%, rgba(255, 255, 255, 0.283) 100%), 
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.096) 70%, rgba(255, 255, 255, 0.37) 80%,rgba(255, 255, 255, 0.333) 85%, rgba(255, 255, 255, 0.342) 100%), 
               url('/src/photo/—Pngtree—rough kraft paper background_1232396.jpg') no-repeat left center;
   background-size: cover;
   height: 950px;
@@ -294,13 +294,13 @@ onUnmounted(() => {
 }
 @media (max-width: 576px) {
   .menu-container {
-    height: 2200px;
+    height: 2300px;
   }
   .three{
     margin-top: 0px;
   }
   .title {
-    font-size: 22px;
+    font-size: 24px;
 
   }
   .subtitle {
