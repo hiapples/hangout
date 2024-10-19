@@ -1,16 +1,20 @@
-import { fileURLToPath, URL } from 'node:url'
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue'; // If you're using Vue
 
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    vue(),
-  ],
+  plugins: [vue()],
+  server: {
+    port: 3000, // Change the port if needed
+    open: true, // Opens the browser automatically
+    cors: true, // Enable CORS
+  },
+  build: {
+    outDir: 'dist', // Output directory for build files
+    sourcemap: true, // Enable sourcemaps for debugging
+  },
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
-  }
-})
+      '@': '/src', // Set up alias for src directory
+    },
+  },
+});
