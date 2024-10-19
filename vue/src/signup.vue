@@ -2,7 +2,7 @@
     import { ref } from "vue";
     import { onMounted,onUpdated,onUnmounted } from "vue";
     import Nav from "./components/nav.vue";
-    import Opening from "./components/opening.vue";
+    import Banner from "./components/banner.vue";
     import Back from "./components/back.vue";
 
 
@@ -15,7 +15,10 @@
             </div>
         </div>
     </div>
+    <Banner></Banner>
     <Back></Back>
+    <br/><br/><br/><br/> <br/><br/><br/><br/> <br/><br/><br/><br/>
+    <br/><br/><br/><br/> <br/><br/><br/><br/> <br/><br/><br/><br/>
     <br/><br/><br/><br/> <br/><br/><br/><br/> <br/><br/><br/><br/>
 </template>
 

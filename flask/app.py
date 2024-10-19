@@ -10,9 +10,6 @@ def index():
 def signup():
     return render_template('signup.html')
 
-@app.route('/assets/<path:path>')
-def send_asset(path):
-    return send_from_directory(app.static_folder, path)
 
 if __name__ == "__main__":
     app.run(debug=True)

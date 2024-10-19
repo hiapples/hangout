@@ -117,7 +117,7 @@ onUnmounted(() => {
             <button class="nav-link" @click="scrollToSection(2)">菜單</button>
           </li>
           <li class="nav-item me-lg-3 ms-auto">
-            <button class="nav-link"><a href="/signup">登入</a></button>
+            <a class="nav-link" href="/signup">登入</a>
           </li>
           <li class="nav-item me-lg-3 ms-auto">
             <button class="nav-link">聯絡我們</button>
@@ -166,6 +166,10 @@ onUnmounted(() => {
   color: #ffffff;
   font-size: 18px;
   border-radius: 20px;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .nav-link:hover {
