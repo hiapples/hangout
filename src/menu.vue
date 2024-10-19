@@ -223,6 +223,7 @@ onUnmounted(() => {
   white-space: normal; 
   overflow-wrap: break-word;
   font-weight: normal;
+  color: rgb(75, 77, 77);
 }
 .menu-container {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.119) 70%, rgba(255, 255, 255, 0.221) 80%,rgba(255, 255, 255, 0.148) 85%, rgba(255, 255, 255, 0.167) 100%), 
