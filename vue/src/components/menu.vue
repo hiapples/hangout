@@ -227,7 +227,7 @@ onUnmounted(() => {
 }
 .menu-container {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.119) 70%, rgba(255, 255, 255, 0.221) 80%,rgba(255, 255, 255, 0.148) 85%, rgba(255, 255, 255, 0.167) 100%), 
-              url('/src/photo/—Pngtree—rough kraft paper background_1232396.jpg') no-repeat left center;
+              url('../photo/—Pngtree—rough kraft paper background_1232396.jpg') no-repeat left center;
   background-size: cover;
   height: 1000px;
 }
@@ -319,7 +319,7 @@ onUnmounted(() => {
   .menu-container {
     height: 2450px;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.119) 70%, rgba(255, 255, 255, 0.263) 80%, rgba(255, 255, 255, 0.137) 85%, rgba(255, 255, 255, 0.174) 100%), 
-                url('/src/photo/666.png') no-repeat center center;
+                url('../photo/666.png') no-repeat center center;
     background-size: cover; /* 讓背景圖片覆蓋整個容器 */
   }
   .three{

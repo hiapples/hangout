@@ -92,7 +92,7 @@ onUnmounted(() => {
   <nav :class="['navbar', 'navbar-expand-lg', isScrolled ? 'navbar-colored' : 'navbar-transparent', { hidden: isHidden }]">
     <div class="container-fluid">
       <a class="navbar-brand" href="all.php">
-        <img src="/src/photo/logo2.png" width="250" />
+        <img src="../photo/logo2.png" width="250" />
       </a>
       <button
         class="navbar-toggler"

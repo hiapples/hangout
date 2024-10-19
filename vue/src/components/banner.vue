@@ -19,10 +19,10 @@ const scrollToSection = (index) => {
 
 <template>
     <div class="image-container">
-        <img class="Banner" src="/src/photo/banner1.jpg" alt="Banner">
+        <img class="Banner" src="../photo/banner1.jpg" alt="Banner">
         <div class="subtitle">加入會員</div>
         <div class="subtitle2">關注我們獲得最新消息</div>
-        <img class="down" src="/src/photo/down.png" @click="scrollToSection(0)">
+        <img class="down" src="../photo/down.png" @click="scrollToSection(0)">
     </div>
 </template>
 

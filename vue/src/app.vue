@@ -1,13 +1,13 @@
 <script setup> 
     import { ref } from "vue";
     import { onMounted,onUpdated,onUnmounted } from "vue";
-    import Nav from "./nav.vue";
-    import Banner from "./banner.vue";
-    import Opening from "./opening.vue";
-    import Back from "./back.vue";
-    import About from "./about.vue";
-    import News from "./news.vue";
-    import Menu from "./menu.vue";
+    import Nav from "./components/nav.vue";
+    import Banner from "./components/banner.vue";
+    import Opening from "./components/opening.vue";
+    import Back from "./components/back.vue";
+    import About from "./components/about.vue";
+    import News from "./components/news.vue";
+    import Menu from "./components/menu.vue";
 
 </script>
 <template>
