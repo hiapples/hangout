@@ -249,14 +249,19 @@ onUnmounted(() => {
   border-top: 3px solid #000;
   border-bottom: 3px solid #000;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
+  .menu-container {
+    height: 1100px;
+  }
+}
+@media (max-width: 1300px) {
   .title {
     font-size: 25px;
-    margin-left: 50px;
+    margin-left: 45px;
   }
   .subtitle {
     font-size: 20px;
-    margin-left: 50px;
+    margin-left: 45px;
   }
   .red {
     font-size: 20px;
@@ -265,7 +270,26 @@ onUnmounted(() => {
     font-size: 20px;
   }
 }
+@media (max-width: 1200px) {
+  .title {
+    font-size: 23px;
+    margin-left: 35px;
+  }
+  .subtitle {
+    font-size: 18px;
+    margin-left: 35px;
+  }
+  .red {
+    font-size: 18px;
+  }
+  .en {
+    font-size: 18px;
+  }
+}
 @media (max-width: 992px) {
+  .menu-container {
+    height: 2200px;
+  }
   .title {
     font-size: 22px;
     margin-left: 30px;
@@ -286,11 +310,9 @@ onUnmounted(() => {
 }
 @media (max-width: 768px) {
   .menu-container {
-    height: 1200px;
+    height: 2250px;
   }
-  .three{
-    margin-top: -120px;
-  }
+
 }
 @media (max-width: 576px) {
   .menu-container {
