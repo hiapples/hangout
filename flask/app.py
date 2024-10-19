@@ -1,11 +1,14 @@
-from flask import Flask, send_from_directory, jsonify
+from flask import Flask, send_from_directory, render_template
 
-app = Flask(__name__, static_folder='static/dist')
+app = Flask(__name__, static_folder='./static/dist/assets', template_folder='./static/dist')
 
 @app.route('/')
-def home():
-    # 返回編譯後的 index.html
-    return send_from_directory(app.static_folder, 'index.html')
+def index():
+    return render_template('index.html')
 
-if __name__ == '__main__':
+@app.route('/assets/<path:path>')
+def send_asset(path):
+    return send_from_directory(app.static_folder, path)
+
+if __name__ == "__main__":
     app.run(debug=True)
