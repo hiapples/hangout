@@ -91,7 +91,7 @@ onUnmounted(() => {
   <!-- nav -->
   <nav :class="['navbar', 'navbar-expand-lg', isScrolled ? 'navbar-colored' : 'navbar-transparent', { hidden: isHidden }]">
     <div class="container-fluid">
-      <a class="navbar-brand" href="all.php">
+      <a class="navbar-brand" href="/">
         <img src="../photo/logo2.png" width="250" />
       </a>
       <button
@@ -117,7 +117,7 @@ onUnmounted(() => {
             <button class="nav-link" @click="scrollToSection(2)">菜單</button>
           </li>
           <li class="nav-item me-lg-3 ms-auto">
-            <button class="nav-link">登入</button>
+            <button class="nav-link"><a href="/signup">登入</a></button>
           </li>
           <li class="nav-item me-lg-3 ms-auto">
             <button class="nav-link">聯絡我們</button>

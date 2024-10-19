@@ -6,6 +6,10 @@ app = Flask(__name__, static_folder='./static/dist/assets', template_folder='./s
 def index():
     return render_template('index.html')
 
+@app.route('/signup')
+def signup():
+    return render_template('signup.html')
+
 @app.route('/assets/<path:path>')
 def send_asset(path):
     return send_from_directory(app.static_folder, path)
