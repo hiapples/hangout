@@ -34,7 +34,7 @@ onUnmounted(() => {
     <div class="container-fluid">
       <div class="row g-2">
         <!-- First Column -->
-        <div class="col-10 col-md-4">
+        <div class="col-10 col-lg-4">
           <div class="title">BURGERS(BEEF/PORK)</div>
           <div class="subtitle">
             <ol>
@@ -83,8 +83,8 @@ onUnmounted(() => {
         </div>
 
         <!-- Second Column -->
-        <div class="col-10 col-md-4">
-          <div class="title mt-5 mt-md-0">HOT DOGS(PORK)</div>
+        <div class="col-10 col-lg-4">
+          <div class="title mt-5 mt-lg-0">HOT DOGS(PORK)</div>
           <div class="subtitle">
             <ol>
               <li class="mt-2">
@@ -128,7 +128,7 @@ onUnmounted(() => {
           </div>
 
           <div v-if="isSmallScreen">
-            <div class="title mt-5 mt-md-0">DRINKS</div>
+            <div class="title mt-5 mt-lg-0">DRINKS</div>
               <div class="subtitle">
                 <ol>
                   <li class="mt-2">
@@ -149,9 +149,9 @@ onUnmounted(() => {
         </div>
 
         <!-- Third Column -->
-        <div class="col-10 col-md-4 three">
+        <div class="col-10 col-lg-4 three">
           <div v-if="!isSmallScreen">
-            <div class="title mt-5 mt-md-0">DRINKS</div>
+            <div class="title mt-5 mt-lg-0">DRINKS</div>
             <div class="subtitle">
                 <ol>
                   <li class="mt-2">

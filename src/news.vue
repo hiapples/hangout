@@ -69,7 +69,7 @@ const scrollRight = () => {
                         </div>
                     </div>
                     <div class="card-body">
-                        <div class="card-body-inner ">
+                        <div class="card-body-inner">
                             <div class="news-title mt-2">
                                 //PANGCAH生活節//<br/>
                                 日期：9/7、8<br/>
@@ -126,7 +126,7 @@ const scrollRight = () => {
                         </div>
                     </div>
                     <div class="card-body">
-                        <div class="card-body-inner ">
+                        <div class="card-body-inner">
                             <div class="news-title mt-2">
                                 八月休假/AugustOffDay<br/>
                                 4/5/11/12/18/19/20/21/22/23/24/25/26<br/>
@@ -157,7 +157,7 @@ const scrollRight = () => {
 #carouselExampleIndicators {
     margin-top: 100px;
     width: 100%;
-    height: 650px;
+    height: 750px;
     overflow: hidden; 
 }
 .row {
@@ -184,13 +184,15 @@ const scrollRight = () => {
     padding:10px;
     margin: 20px;
 }
-.card-body-inner{
+.card-body-inner {
     background-color: rgb(164, 185, 180);
     text-align: center;
     font-family: 'font';
     padding: 20px 10px;
-    height: 465px;
+    height: 565px;
+
 }
+
 .card-body{
     border: 5px solid rgb(164, 185, 180);
     padding:10px;
@@ -198,7 +200,7 @@ const scrollRight = () => {
 }
 .card {
     flex: 0 0 100%; /* 確保每個卡片佔滿容器寬度 */
-    height: 670px; /* 卡片高度 */
+    height: 770px; /* 卡片高度 */
     background-color: transparent; /* 便於識別的背景顏色 */
     display: flex;
     border-radius: 0%;
