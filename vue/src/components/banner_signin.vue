@@ -8,23 +8,25 @@ import { onMounted, onUpdated, onUnmounted } from "vue";
 <template>
     <div class="body">
         <div class="wrapper">
-            <form action="/signuping" method="post">
-                <h1>Register</h1>
+            <form action="">
+                <h1>Login</h1>
                 <div class="input-box"> 
-                    <input id="signup_userid" name="signup_userid" type="text" placeholder="Username" required/>
+                    <input type="text" placeholder="Username" required/>
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class="input-box"> 
-                    <input id="signup_password" name="signup_password" type="password" placeholder="Password" required/>
+                    <input type="password" placeholder="Password" required/>
                     <i class='bx bxs-lock-alt'></i>
                 </div>
-                <div class="input-box"> 
-                    <input id="signup_password2" name="signup_password2" type="password" placeholder="ConfirmPassword" required/>
-                    <i class='bx bxs-lock-alt'></i>
+                <div class="remember-forget">
+                    <label>
+                        <input type="checkbox" />Remember me
+                    </label>
+                    <a href="#">Forget password?</a>
                 </div>
-                <button class="btn" >Signup</button>
+                <button class="btn" >Signin</button>
                 <div class="register-link">
-                    <p>Do you have an account?&ensp;<a href="/signin">Login</a></p>
+                    <p>Don't have an account?&ensp;<a href="/signup">Register</a></p>
                 </div>
             </form>
         </div>
@@ -91,8 +93,23 @@ import { onMounted, onUpdated, onUnmounted } from "vue";
     transform: translateY(-50%);
     font-size: 20px;
 }
-
-
+.wrapper .remember-forget{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+.remember-forget label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+.remember-forget a{
+    color: #fff;
+    text-decoration: none;
+}
+.remember-forget a:hover{
+    text-decoration: underline;
+}
 .wrapper .btn{
     width: 100%;
     height: 45px;
