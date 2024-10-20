@@ -10,6 +10,6 @@ export default defineConfig({
     open: true,       // 启动时自动打开浏览器
   },
   build: {
-    outDir: 'dist', // 构建输出目录
+    outDir: '../flask/static/dist', // 构建输出目录
   },
 });

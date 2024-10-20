@@ -33,7 +33,7 @@ app = Flask(__name__, static_folder='./static/dist/assets', template_folder='./s
 #測試用帳號
 client=pymongo.MongoClient("mongodb+srv://hiapples900:howard900@popalz.bm0pbdd.mongodb.net/?retryWrites=true&w=majority&appName=PoPalz")
 db2=client.hangout
-collection2=db2.users
+collection=db2.users
 
 
 #首頁
@@ -47,6 +47,10 @@ def signup():
 #登入頁面
 @app.route('/signin')
 def signin():
+    collection.insert_one({
+        "userid":"userid",
+        "password":"password"
+    })
     return render_template('signin.html')
 
 ##註冊程序
@@ -54,10 +58,11 @@ def signin():
 def signuping():
     userid=request.form["signup_userid"]
     password=request.form["signup_password"]
-    collection2.insert_one({
+    collection.insert_one({
         "userid":userid,
         "password":password
     })
     return redirect("/signin")
+
 if __name__ == "__main__":
     app.run(debug=True)
