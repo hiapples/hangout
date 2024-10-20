@@ -1,25 +1,19 @@
 <script setup> 
     import { ref } from "vue";
     import { onMounted,onUpdated,onUnmounted } from "vue";
-    import Nav from "./components/nav.vue";
-    import Banner from "./components/banner.vue";
-    import Back from "./components/back.vue";
-
+    import Nav_signup from "./components/nav_signup.vue";
+    import Banner_signup from "./components/banner_signup.vue";
 
 </script>
-<template>
+<template> 
+    <Banner_signup></Banner_signup>
     <div class="container-fluid" style="background-color: white;">
         <div class="row">
             <div class="col">
-                <Nav ></Nav>
+                <Nav_signup></Nav_signup>
             </div>
         </div>
     </div>
-    <Banner></Banner>
-    <Back></Back>
-    <br/><br/><br/><br/> <br/><br/><br/><br/> <br/><br/><br/><br/>
-    <br/><br/><br/><br/> <br/><br/><br/><br/> <br/><br/><br/><br/>
-    <br/><br/><br/><br/> <br/><br/><br/><br/> <br/><br/><br/><br/>
 </template>
 
 <style scoped>
