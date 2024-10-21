@@ -26,7 +26,7 @@ import { onMounted, onUpdated, onUnmounted } from "vue";
                 </div>
                 <button class="btn" >Signin</button>
                 <div class="register-link">
-                    <p>Don't have an account?&ensp;<a href="/signup">Register</a></p>
+                    <p>Don't have an account?&ensp;<router-link  to="/signup">Register</router-link></p>
                 </div>
             </form>
         </div>
