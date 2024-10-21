@@ -17,7 +17,7 @@
 <template>
     <div>
         <div v-if="showAnimation" :class="['intro-animation', { 'fade-out': fadeOut }]" id="intro-animation">
-            <img src="../photo/logo2.png" class="opening-image">
+            <img src="../../photo/logo2.png" class="opening-image">
         </div>
     </div>
 </template>

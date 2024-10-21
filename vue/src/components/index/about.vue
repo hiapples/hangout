@@ -92,13 +92,13 @@ onMounted(() => {
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="../photo/content1.jpg" class="d-block w-100" alt="...">
+                            <img src="../../photo/content1.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="../photo/content2.jpg" class="d-block w-100" alt="...">
+                            <img src="../../photo/content2.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="../photo/content3.jpg" class="d-block w-100" alt="...">
+                            <img src="../../photo/content3.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -118,10 +118,10 @@ onMounted(() => {
             <div class="col-12" >
                 <div class="text-container">
                     <div>
-                        <img class="hb" src="../photo/banner1.jpg"/>
+                        <img class="hb" src="../../photo/banner1.jpg"/>
                     </div>
                     <div>
-                        <img class="icon-fork" src="../photo/fork.png"/>
+                        <img class="icon-fork" src="../../photo/fork.png"/>
                     </div>
                     <div class="text-inner d-flex align-items-center">
                         顧客們的好評推薦，我們持續求新求變。<br>
@@ -139,10 +139,10 @@ onMounted(() => {
             <div class="col-12" >
                 <div class="text-container2 ">
                     <div>
-                        <img class="hb2" src="../photo/banner2.jpg"/>
+                        <img class="hb2" src="../../photo/banner2.jpg"/>
                     </div>
                     <div>
-                        <img class="icon-knife" src="../photo/french-knife.png"/>
+                        <img class="icon-knife" src="../../photo/french-knife.png"/>
                     </div>
                     <div class="text-inner2 d-flex align-items-center">
                         餐盤貼近自己，<br/>
@@ -256,7 +256,7 @@ onMounted(() => {
     top:-100px;
     left: 50%; /* 向左偏移50% */
     transform: translateX(-50%); /* 再向左偏移自身宽度的一半 */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../photo/—Pngtree—close up of striped timber_15272361.jpg'); /* 原图片 */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../photo/—Pngtree—close up of striped timber_15272361.jpg'); /* 原图片 */
     z-index: 0;
 }
 

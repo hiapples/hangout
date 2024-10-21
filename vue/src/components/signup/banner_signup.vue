@@ -43,7 +43,7 @@ import { onMounted, onUpdated, onUnmounted } from "vue";
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url("./src/photo/244253280_241288671346732_2915103136200946263_n.jpg") no-repeat;
+    background: url("../../photo/244253280_241288671346732_2915103136200946263_n.jpg") no-repeat;
     background-size: cover;
     background-position:bottom;
 }

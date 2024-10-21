@@ -4,7 +4,7 @@
     import Nav from "./components/index/nav.vue";
     import Banner from "./components/index/banner.vue";
     import Opening from "./components/index/opening.vue";
-    import Back from "./components/signin/back.vue";
+    import Back from "./components/index/back.vue";
     import About from "./components/index/about.vue";
     import News from "./components/index/news.vue";
     import Menu from "./components/index/menu.vue";

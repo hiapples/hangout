@@ -8,7 +8,7 @@ import { ref, onMounted, onUnmounted } from "vue";
   <nav class="navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">
-        <img src="../photo/logo2.png" width="250" />
+        <img src="../../photo/logo2.png" width="250" />
       </a>
     </div>
   </nav>
