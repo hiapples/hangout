@@ -41,6 +41,9 @@ function submitSignup() {
         successMessage.value = ""; // 清除成功消息
     });
 }
+
+
+
 </script>
 
 <template>
