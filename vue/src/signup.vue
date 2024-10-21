@@ -1,8 +1,8 @@
 <script setup> 
     import { ref } from "vue";
     import { onMounted,onUpdated,onUnmounted } from "vue";
-    import Nav_signup from "./components/nav_signup.vue";
-    import Banner_signup from "./components/banner_signup.vue";
+    import Nav_signup from "./components/signup/nav_signup.vue";
+    import Banner_signup from "./components/signup/banner_signup.vue";
 
 </script>
 <template> 

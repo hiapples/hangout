@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import App from '../app.vue';
+import App from '../index.vue';
 import Signup from '../signup.vue';
 import Signin from '../signin.vue';
 

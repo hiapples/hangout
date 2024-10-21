@@ -1,8 +1,8 @@
 <script setup> 
     import { ref } from "vue";
     import { onMounted,onUpdated,onUnmounted } from "vue";
-    import Nav_signin from "./components/nav_signin.vue";
-    import Banner_signin from "./components/banner_signin.vue";
+    import Nav_signin from "./components/signin/nav_signin.vue";
+    import Banner_signin from "./components/signin/banner_signin.vue";
 
 </script>
 <template> 
