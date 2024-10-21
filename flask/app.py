@@ -46,8 +46,7 @@ def index():
 #註冊頁面
 @app.route('/signup')
 def signup():
-    msg=request.args.get("msg","")
-    return render_template('index.html',msg=msg)
+    return render_template('index.html')
 
 #登入頁面
 @app.route('/signin')
@@ -60,18 +59,20 @@ def signuping():
     userid = request.form["signup_userid"]
     password = request.form["signup_password"]
 
-    # 檢查用戶名是否已存在
-    existing_user = collection.find_one({"userid": userid})
-    if existing_user:
-        return redirect(url_for('signup', msg='此用戶名稱已被註冊！'))
-    
-    # 插入新用戶
+    # 查找用戶名是否已經存在
+    result = collection.find_one({
+        "userid": userid
+    })
+    if result is not None:
+        return jsonify({"success": False, "message": "用戶名已重複"})
+
+    # 將新用戶插入數據庫
     collection.insert_one({
         "userid": userid,
         "password": password
     })
-    
-    return redirect(url_for('signin'))
+
+    return jsonify({"success": True, "message": "註冊成功，請登入"})
 
 
 
