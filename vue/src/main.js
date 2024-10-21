@@ -3,16 +3,13 @@ import {createApp} from "vue";
 
 //載入根組件
 import App from "./app.vue";
-import Signup from "./signup.vue";
-import Signin from "./signin.vue";
+import router from './router/router.js'; 
 
 
 //建立vue app物件
 const app = createApp(App);
-const signup = createApp(Signup);
-const signin = createApp(Signin);
+
+app.use(router); // 使用 router
 
 //掛載到HTML標籤
 app.mount("#app");
-signup.mount("#signup");
-signin.mount("#signin");

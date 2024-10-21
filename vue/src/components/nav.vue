@@ -117,7 +117,7 @@ onUnmounted(() => {
             <button class="nav-link" @click="scrollToSection(2)">菜單</button>
           </li>
           <li class="nav-item me-lg-3 ms-auto">
-            <a class="nav-link" href="/signin">登入</a>
+            <router-link class="nav-link" to="/signin">登入</router-link>
           </li>
           <li class="nav-item me-lg-3 ms-auto">
             <button class="nav-link">聯絡我們</button>

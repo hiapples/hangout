@@ -9,6 +9,9 @@
     import News from "./components/news.vue";
     import Menu from "./components/menu.vue";
 
+    import Signin from "./signin.vue";
+    import Signup from "./signup.vue";
+
 </script>
 <template>
     <Opening></Opening>
