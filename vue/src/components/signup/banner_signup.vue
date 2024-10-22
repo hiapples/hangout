@@ -9,11 +9,46 @@ const errorMessage = ref(""); // 用來顯示來自後端的錯誤消息
 const successMessage = ref(""); // 顯示成功消息
 
 function submitSignup() {
+    // 檢查用戶名長度
+    if (signupUserId.value.length < 3 || signupUserId.value.length > 15) {
+        errorMessage.value = "Username must be between 3 and 15 characters";
+        triggerAlertAnimation();
+        return; // 錯誤後面不執行
+    }
+
+    // 檢查用戶名是否為空
+    if (!signupUserId.value.trim()) {
+        errorMessage.value = "Username cannot be empty";
+        triggerAlertAnimation();
+        return; // 錯誤後面不執行
+    }
+
+    // 檢查密碼是否為空
+    if (!signupPassword.value.trim()) {
+        errorMessage.value = "Password cannot be empty";
+        triggerAlertAnimation();
+        return; // 錯誤後面不執行
+    }
+
+    // 檢查密碼長度
+    if (signupPassword.value.length < 6) {
+        errorMessage.value = "Password must be at least 6 characters long";
+        triggerAlertAnimation();
+        return; // 錯誤後面不執行
+    }
+
+    // 檢查確認密碼是否為空
+    if (!signupPassword2.value.trim()) {
+        errorMessage.value = "Please confirm your password";
+        triggerAlertAnimation();
+        return; // 錯誤後面不執行
+    }
+
     // 檢查密碼是否一致
     if (signupPassword.value !== signupPassword2.value) {
         errorMessage.value = "Two passwords are inconsistent";
         triggerAlertAnimation();
-        return; //錯誤後面不執行
+        return; // 錯誤後面不執行
     }
 
     const formData = new FormData();
@@ -60,9 +95,6 @@ function triggerAlertAnimation() {
     }
 }
 
-
-
-
 </script>
 
 <template>
@@ -71,15 +103,15 @@ function triggerAlertAnimation() {
             <h1>Register</h1>
             <form @submit.prevent="submitSignup">
                 <div class="input-box">
-                    <input v-model="signupUserId" type="text" placeholder="Username" pattern=".{3,15}" oninvalid="setCustomValidity('Please enter a username between 3 and 15 characters.');" oninput="setCustomValidity('');" autocomplete="off" required/>
+                    <input v-model="signupUserId" type="text" placeholder="Username" autocomplete="off" />
                     <i class="bx bxs-user"></i>
                 </div>
                 <div class="input-box">
-                    <input v-model="signupPassword" type="password" placeholder="Password" required/>
+                    <input v-model="signupPassword" type="password" placeholder="Password" />
                     <i class="bx bxs-lock-alt"></i>
                 </div>
                 <div class="input-box">
-                    <input v-model="signupPassword2" type="password" placeholder="Confirm Password" required/>
+                    <input v-model="signupPassword2" type="password" placeholder="Confirm Password" />
                     <i class="bx bxs-lock-alt"></i>
                 </div>
                 <button class="button btn btn-primary">Sign up</button>
