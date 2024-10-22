@@ -114,10 +114,10 @@ function triggerAlertAnimation() {
                 <button class="button btn btn-primary">Sign up</button>
                 <div class="register-link">
                     <p>Do you have an account?&ensp;<router-link to="/signin">Login</router-link></p>
-                    <div class="mt-3">
-                        <div v-if="errorMessage" class="alert alert-danger" ref="alertBox">{{ errorMessage }}</div>
-                        <div v-if="successMessage" class="alert alert-success" ref="alertBox">{{ successMessage }}</div>
-                    </div>
+                </div>
+                <div class="mt-3">
+                    <div v-if="errorMessage" class="alert alert-danger" ref="alertBox">{{ errorMessage }}</div>
+                    <div v-if="successMessage" class="alert alert-success" ref="alertBox">{{ successMessage }}</div>
                 </div>
             </form>
         </div>
@@ -213,6 +213,7 @@ function triggerAlertAnimation() {
     .alert {
         padding: 10px;
         transition: transform 0.3s ease;
+        text-align: center;
     }
 
     .scale-active {

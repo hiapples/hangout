@@ -72,7 +72,7 @@ def signuping():
         "password": password
     })
 
-    return jsonify({"success": True, "message": "Registration successful, please log in..."})
+    return jsonify({"success": True, "message": "Registration successful, please log in"})
 
 
 
