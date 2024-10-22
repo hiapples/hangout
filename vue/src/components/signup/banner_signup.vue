@@ -8,39 +8,58 @@ const signupPassword2 = ref("");
 const errorMessage = ref(""); // 用來顯示來自後端的錯誤消息
 const successMessage = ref(""); // 顯示成功消息
 
-// 提交表單處理函數
 function submitSignup() {
     // 檢查密碼是否一致
     if (signupPassword.value !== signupPassword2.value) {
-        errorMessage.value = "兩次密碼不一致";
-        return;
+        errorMessage.value = "Two passwords are inconsistent";
+        triggerAlertAnimation();
+        return; //錯誤後面不執行
     }
 
     const formData = new FormData();
     formData.append('signup_userid', signupUserId.value);
     formData.append('signup_password', signupPassword.value);
 
-    fetch('/signuping', {method: 'POST',body: formData})
-    .then(response => response.json()) 
-    .then(responseData => {
-        if (responseData.success) {
-            successMessage.value = responseData.message;
-            errorMessage.value = ""; // 清除錯誤消息
-            // 重定向到登入頁面
-            setTimeout(() => {
-                window.location.href = '/signin';
-            }, 2000); // 2秒後重定向
-        } else {
-            errorMessage.value = responseData.message;
+    fetch('/signuping', { method: 'POST', body: formData })
+        .then(response => response.json())
+        .then(responseData => {
+            if (responseData.success) {
+                successMessage.value = responseData.message;
+                errorMessage.value = ""; // 清除錯誤消息
+                document.querySelector(".button").disabled = true;
+                setTimeout(() => {  
+                    window.location.href = '/signin';
+                }, 2000); // 2秒後重定向
+            } else {
+                errorMessage.value = responseData.message;
+                successMessage.value = ""; // 清除成功消息
+                triggerAlertAnimation(); // 觸發錯誤消息動畫
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            errorMessage.value = 'An error occurred during submission';
             successMessage.value = ""; // 清除成功消息
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        errorMessage.value = '提交過程中發生錯誤';
-        successMessage.value = ""; // 清除成功消息
-    });
+            triggerAlertAnimation(); // 觸發錯誤消息動畫
+        });
 }
+
+
+function triggerAlertAnimation() {
+    const alertBox = document.querySelector(".alert");
+    if (alertBox) {
+        alertBox.classList.remove('scale-reset'); // 移除重置類
+        alertBox.offsetWidth; // 觸發重排來讓動畫生效
+        alertBox.classList.add('scale-active'); // 添加放大的類名
+
+        // 1秒後移除放大的類名，恢復原狀
+        setTimeout(() => {
+            alertBox.classList.remove('scale-active'); // 移除放大效果
+            alertBox.classList.add('scale-reset'); // 恢復到原始大小
+        }, 200); 
+    }
+}
+
 
 
 
@@ -52,7 +71,7 @@ function submitSignup() {
             <h1>Register</h1>
             <form @submit.prevent="submitSignup">
                 <div class="input-box">
-                    <input v-model="signupUserId" type="text" placeholder="Username" required/>
+                    <input v-model="signupUserId" type="text" placeholder="Username" pattern=".{3,15}" oninvalid="setCustomValidity('Please enter a username between 3 and 15 characters.');" oninput="setCustomValidity('');" autocomplete="off" required/>
                     <i class="bx bxs-user"></i>
                 </div>
                 <div class="input-box">
@@ -63,12 +82,12 @@ function submitSignup() {
                     <input v-model="signupPassword2" type="password" placeholder="Confirm Password" required/>
                     <i class="bx bxs-lock-alt"></i>
                 </div>
-                <button class="button btn btn-primary">Signup</button>
+                <button class="button btn btn-primary">Sign up</button>
                 <div class="register-link">
                     <p>Do you have an account?&ensp;<router-link to="/signin">Login</router-link></p>
                     <div class="mt-3">
-                        <div v-if="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
-                        <div v-if="successMessage" class="alert alert-success">{{ successMessage }}</div>
+                        <div v-if="errorMessage" class="alert alert-danger" ref="alertBox">{{ errorMessage }}</div>
+                        <div v-if="successMessage" class="alert alert-success" ref="alertBox">{{ successMessage }}</div>
                     </div>
                 </div>
             </form>
@@ -162,9 +181,21 @@ function submitSignup() {
     .register-link p a:hover {
         text-decoration: underline;
     }
-    .alert{
+    .alert {
         padding: 10px;
+        transition: transform 0.3s ease;
     }
+
+    .scale-active {
+        transform: scale(1.1); /* 放大1.2倍 */
+        transition: transform 0.2s ease; /* 設置放大1秒 */
+    }
+
+    .scale-reset {
+        transform: scale(1); /* 恢復原始大小 */
+        transition: transform 0.3s ease; /* 回縮的過渡效果 */
+    }
+
     @media (max-width: 576px) {
         .wrapper {
             width: 380px;

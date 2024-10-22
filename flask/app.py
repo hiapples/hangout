@@ -64,7 +64,7 @@ def signuping():
         "userid": userid
     })
     if result is not None:
-        return jsonify({"success": False, "message": "用戶名已重複"})
+        return jsonify({"success": False, "message": "Username is duplicated"})
 
     # 將新用戶插入數據庫
     collection.insert_one({
@@ -72,7 +72,7 @@ def signuping():
         "password": password
     })
 
-    return jsonify({"success": True, "message": "註冊成功，請登入"})
+    return jsonify({"success": True, "message": "Registration successful, please log in..."})
 
 
 
