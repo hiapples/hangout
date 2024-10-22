@@ -117,7 +117,9 @@ function triggerAlertAnimation() {
                 </div>
                 <div class="mt-3">
                     <div v-if="errorMessage" class="alert alert-danger" ref="alertBox">{{ errorMessage }}</div>
-                    <div v-if="successMessage" class="alert alert-success" ref="alertBox">{{ successMessage }}</div>
+                    <div v-if="successMessage" class="alert alert-success" ref="alertBox">{{ successMessage }}
+                        <div><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>&ensp;Loading...</div>
+                    </div>
                 </div>
             </form>
         </div>
