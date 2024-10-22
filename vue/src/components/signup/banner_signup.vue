@@ -9,16 +9,15 @@ const errorMessage = ref(""); // 用來顯示來自後端的錯誤消息
 const successMessage = ref(""); // 顯示成功消息
 
 function submitSignup() {
-    // 檢查用戶名長度
-    if (signupUserId.value.length < 3 || signupUserId.value.length > 15) {
-        errorMessage.value = "Username must be between 3 and 15 characters";
+    // 檢查用戶名是否為空
+        if (!signupUserId.value.trim()) {
+        errorMessage.value = "Username cannot be empty";
         triggerAlertAnimation();
         return; // 錯誤後面不執行
     }
-
-    // 檢查用戶名是否為空
-    if (!signupUserId.value.trim()) {
-        errorMessage.value = "Username cannot be empty";
+    // 檢查用戶名長度
+    if (signupUserId.value.length < 3 || signupUserId.value.length > 15) {
+        errorMessage.value = "Username must be between 3 and 15 characters";
         triggerAlertAnimation();
         return; // 錯誤後面不執行
     }
@@ -29,14 +28,12 @@ function submitSignup() {
         triggerAlertAnimation();
         return; // 錯誤後面不執行
     }
-
     // 檢查密碼長度
     if (signupPassword.value.length < 6) {
         errorMessage.value = "Password must be at least 6 characters long";
         triggerAlertAnimation();
         return; // 錯誤後面不執行
     }
-
     // 檢查確認密碼是否為空
     if (!signupPassword2.value.trim()) {
         errorMessage.value = "Please confirm your password";
