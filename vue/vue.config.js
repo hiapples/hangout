@@ -2,7 +2,7 @@
 module.exports = {
     outputDir: '../flask/static/dist',
     devServer: {
-      proxy: 'http://localhost:8000'  // PHP 服务器的地址
+      proxy: 'http://localhost:5000'  
     },
     pwa: {
       name: 'HANG OUT',
