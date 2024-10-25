@@ -174,7 +174,7 @@ function triggerAlertAnimation() {
         padding: 20px 45px 20px 20px;
     }
     .input-box input::placeholder {
-        color: #9c9696;
+        color: #c8c0c0;
     }
     .input-box {
         position: relative;
@@ -198,6 +198,9 @@ function triggerAlertAnimation() {
         font-size: 16px;
         color: #333;
         font-weight: 600;
+    }
+    .wrapper .button:hover{
+        background: #d6cece;
     }
     .wrapper .register-link {
         font-size: 14.5px;

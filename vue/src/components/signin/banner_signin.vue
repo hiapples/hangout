@@ -24,7 +24,7 @@ import { onMounted, onUpdated, onUnmounted } from "vue";
                     </label>
                     <a href="#">Forget password?</a>
                 </div>
-                <button class="btn" >Sign in</button>
+                <button class="button" >Sign in</button>
                 <div class="register-link">
                     <p>Don't have an account?&ensp;<router-link  to="/signup">Register</router-link></p>
                 </div>
@@ -81,7 +81,7 @@ import { onMounted, onUpdated, onUnmounted } from "vue";
     padding: 20px 45px 20px 20px ;
 }
 .input-box input::placeholder{
-    color: #9c9696;
+    color: #c8c0c0;
 }
 .input-box{
     position:relative
@@ -110,7 +110,7 @@ import { onMounted, onUpdated, onUnmounted } from "vue";
 .remember-forget a:hover{
     text-decoration: underline;
 }
-.wrapper .btn{
+.wrapper .button{
     width: 100%;
     height: 45px;
     background: #fff;
@@ -122,6 +122,9 @@ import { onMounted, onUpdated, onUnmounted } from "vue";
     font-size: 16px;
     color: #333;
     font-weight: 600;
+}
+.wrapper .button:hover{
+    background: #d6cece;
 }
 .wrapper .register-link{
     font-size: 14.5px;

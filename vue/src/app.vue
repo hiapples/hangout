@@ -8,6 +8,16 @@
 </template>
 
 <style scoped>
-
- 
+@font-face {
+  font-family: 'font';
+  src: url('/src/fonts/font.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'font2';
+  src: url('/src/fonts/font2.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 </style>
