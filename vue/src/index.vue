@@ -12,7 +12,7 @@
 </script>
 <template>
     <Opening></Opening>
-    <div class="container-fluid" style="background-color: white;">
+    <div class="container-fluid" style="background-color: black;">
         <div class="row">
             <div class="col">
                 <Nav ></Nav>
