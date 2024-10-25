@@ -17,9 +17,6 @@
 <template>
     <div v-if="showAnimation" :class="['preload', { 'fade-out': fadeOut }]" >
         <div class="opening-image">
-            <div class="d-flex">
-                <div class="circle mx-auto"></div>
-            </div>
             <p class="text">Hangout</p>
         </div>
     </div>
@@ -39,25 +36,11 @@
         justify-items: center;
         transition: opacity 1s ease-out; /* 添加透明度变化的过渡效果 */
     }
-    .circle{
-        width: clamp(50px, 10vw + 20px, 112px);
-        height: clamp(50px, 10vw + 20px, 112px);
-        border-radius: 50%;
-        border: clamp(4px,1vw,7px) solid rgb(9, 101, 81) ;
-        border-block-start-color: rgb(0, 0, 0);
-        margin-block-end: 45px;
-        animation: rotate360 1s linear infinite;
-    }
-    @keyframes rotate360{
-        0%{transform: rotate(0);}
-        100%{transform: rotate(1turn);}
-    }
     .text {
         background-image: linear-gradient(90deg,transparent 0% 16.66% ,rgb(9, 101, 81) 33.33% 50% , transparent 66.66% 75%);
         background-size: 500%;
-        font-size: calc(2rem + 3vw);
-        font-family: 'font2';
-        font-weight: 700;
+        font-size: calc(3rem + 3vw);
+        font-family: 'font3';
         line-height: 1em;
         text-transform: uppercase;
         letter-spacing: 16px;

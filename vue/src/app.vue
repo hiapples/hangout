@@ -15,9 +15,9 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'font2';
-  src: url('/src/fonts/font2.ttf') format('opentype');
-  font-weight: normal;
+  font-family: 'font3';
+  src: url('/src/fonts/font3.ttf') format('opentype');
+  font-weight:normal;
   font-style: normal;
 }
 </style>
