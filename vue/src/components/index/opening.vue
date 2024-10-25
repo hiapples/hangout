@@ -43,7 +43,7 @@
         width: clamp(50px, 10vw + 20px, 112px);
         height: clamp(50px, 10vw + 20px, 112px);
         border-radius: 50%;
-        border: 3px solid rgb(167, 167, 167);
+        border: clamp(4px,1vw,7px) solid rgb(9, 101, 81) ;
         border-block-start-color: rgb(0, 0, 0);
         margin-block-end: 45px;
         animation: rotate360 1s linear infinite;
