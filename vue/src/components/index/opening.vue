@@ -17,7 +17,7 @@
 <template>
     <div v-if="showAnimation" :class="['preload', { 'fade-out': fadeOut }]" >
         <div class="opening-image">
-            <p class="text">Hangout</p>
+            <p class="text">:Hangout</p>
         </div>
     </div>
 </template>
@@ -41,7 +41,6 @@
         background-size: 500%;
         font-size: calc(3rem + 3vw);
         font-family: 'font3';
-        line-height: 1em;
         text-transform: uppercase;
         letter-spacing: 16px;
         -webkit-text-fill-color: transparent;
