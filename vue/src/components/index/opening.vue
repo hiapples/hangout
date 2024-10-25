@@ -39,16 +39,6 @@
         justify-items: center;
         transition: opacity 1s ease-out; /* 添加透明度变化的过渡效果 */
     }
-    .preload >* {
-        transition: 250ms ease; 
-    }
-    .loaded >* {
-        opacity: 0;
-    }
-    .loaded{
-        transition-delay: 250ms;
-        transform: translateY(100%);
-    }
     .circle{
         width: clamp(50px, 10vw + 20px, 112px);
         height: clamp(50px, 10vw + 20px, 112px);
@@ -88,7 +78,7 @@
     }
 
     .fade-out {
-        opacity: 0; /* 设置退出时透明度为 0 */
+        opacity: 0;
     }
 
     @keyframes fadeIn {
