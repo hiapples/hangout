@@ -133,7 +133,7 @@ onUnmounted(() => {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10; /* 確保導航欄在所有內容之上 */
+  z-index: 99; /* 確保導航欄在所有內容之上 */
   padding: 10px;
   transition: transform 0.5s ease !important; /* 平滑過渡 */
 }

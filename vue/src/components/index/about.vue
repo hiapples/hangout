@@ -175,7 +175,7 @@ onMounted(() => {
 
 .text-inner{
     position: relative; 
-    z-index: 2; 
+    z-index: 99; 
     border: 1px solid black ;
     height: 300px;
     margin-left: 200px;
@@ -188,7 +188,7 @@ onMounted(() => {
 }
 .text-inner2{
     position: relative; 
-    z-index: 2; 
+    z-index: 99; 
     border: 1px solid black ;
     height: 300px;
     margin-left: 100px;
@@ -206,7 +206,7 @@ onMounted(() => {
     position: absolute; 
     top: -75px; 
     left: 75px; 
-    z-index: 1000;
+    z-index: 99;
     border-radius: 50%;
     border:  1px solid black;
     transition: transform 0.3s ease;
@@ -217,7 +217,7 @@ onMounted(() => {
     position: absolute; 
     top: 140px; 
     right: 50px; 
-    z-index: 1000;
+    z-index: 99;
     animation: swing 1s infinite alternate;
 }
 .icon-knife{
@@ -226,7 +226,7 @@ onMounted(() => {
     position: absolute; 
     top: 150px; 
     left: 30px; 
-    z-index: 1000;
+    z-index: 99;
     animation: swing2 1s infinite alternate;
 }
 @keyframes swing {
@@ -257,7 +257,7 @@ onMounted(() => {
     left: 50%; /* 向左偏移50% */
     transform: translateX(-50%); /* 再向左偏移自身宽度的一半 */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../photo/—Pngtree—close up of striped timber_15272361.jpg'); /* 原图片 */
-    z-index: 0;
+    z-index: 99;
 }
 
 .hb2{
@@ -266,7 +266,7 @@ onMounted(() => {
     position: absolute; 
     bottom: -75px; 
     right: 75px; 
-    z-index: 1000;
+    z-index: 99;
     border-radius: 50%;
     border:  1px solid black;
     transition: transform 0.3s ease;
@@ -290,7 +290,7 @@ onMounted(() => {
     overflow: hidden; /* 確保內容保持在圓角內 */
 }
 .card {
-    z-index: 1000;
+    z-index: 99;
     height: 730px;
     padding: 0;
     border-radius: 30px;

@@ -44,7 +44,7 @@ onUnmounted(() => {
     opacity: 0; /* 開始時隱藏 */
     transition: opacity 1.5s ease, background-color 0.5s; /* 添加過渡效果 */
     pointer-events: none; /* 不接收點擊事件 */
-    z-index: 100000000;
+    z-index: 99;
 }
 
 .back-value.show {
