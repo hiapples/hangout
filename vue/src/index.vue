@@ -7,9 +7,10 @@
     import About from "./components/index/about.vue";
     import News from "./components/index/news.vue";
     import Menu from "./components/index/menu.vue";
-
+    import Opening from "./components/index/opening.vue";
 </script>
 <template>
+    <Opening></Opening>
     <div class="container-fluid">
         <div class="row">
             <div class="col">
