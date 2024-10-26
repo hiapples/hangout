@@ -43,15 +43,6 @@ collection=db2.users
 def index():
     return render_template('index.html')
 
-#註冊頁面
-@app.route('/signup')
-def signup():
-    return render_template('index.html')
-
-#登入頁面
-@app.route('/signin')
-def signin():
-    return render_template('index.html')
 
 # 註冊程序
 @app.route("/signuping", methods=["POST"])
@@ -73,7 +64,6 @@ def signuping():
     })
 
     return jsonify({"success": True, "message": "Registration successful, please log in"})
-
 
 
 if __name__ == "__main__":
