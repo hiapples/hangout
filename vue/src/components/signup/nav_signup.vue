@@ -28,10 +28,5 @@ import { ref, onMounted, onUnmounted } from "vue";
     width: 200px;
   }
 }
-@font-face {
-  font-family: 'font';
-  src: url('/src/fonts/font.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
+
 </style>
