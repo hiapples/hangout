@@ -3,7 +3,11 @@
     import { onMounted,onUpdated,onUnmounted } from "vue";
 </script>
 <template>
-    <router-view></router-view>
+  <transition name="fade" mode="out-in">
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
+  </transition>
 </template>
 
 <style scoped>
