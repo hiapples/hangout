@@ -38,11 +38,14 @@ collection=db2.users
 #cls db
 #result=collection.delete_many({})
 
-#首頁
-@app.route('/')
-def index():
-    return render_template('index.html')
-
+# 静态文件路由
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def serve_vue_app(path):
+    if path != "" and os.path.exists(app.template_folder + '/' + path):
+        return send_from_directory(app.template_folder, path)
+    else:
+        return send_from_directory(app.template_folder, 'index.html')
 
 # 註冊程序
 @app.route("/signuping", methods=["POST"])
