@@ -38,6 +38,11 @@ collection=db2.users
 #cls db
 #result=collection.delete_many({})
 
+@app.after_request
+def add_header(response):
+    response.cache_control.max_age = 31536000  # 设置缓存时间，单位为秒
+    return response
+
 # 静态文件路由
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
